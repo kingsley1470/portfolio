@@ -14,8 +14,7 @@ body {
 }
 
 section {
-   /* padding: 90px 15px;  */
-   padding: 61px 18px; 
+  padding: 50px 18px;
 }
 
 .content {
@@ -24,18 +23,12 @@ section {
   margin: 0 auto;
 }
 
-/* .about-container-left p {
-  font-size: 24px;
-  margin: 65px 0 10px;
-  color: #222;
-} */
-
 .bold {
   font-weight: 700;
 }
 
 .dot {
-  color: #000000;
+  color: #1b1a1a;
 }
 
 h2 {
@@ -160,13 +153,11 @@ img {
   padding: 10px 15px;
   text-decoration: none;
   display: block;
-
 }
 
 .site-header .nav-links ul li:hover {
-   color: white;
+  color: white;
   background-color: #87a3a3;
-
 }
 
 .site-header button {
@@ -197,7 +188,7 @@ img {
 }
 
 .banner {
-   padding: 90px 15px; 
+  padding: 90px 15px;
   background-color: #87a3a3;
   text-align: center;
   color: #ffffff;
@@ -230,7 +221,6 @@ img {
   .banner .banner--content .designation {
     font-size: 70px;
   }
- 
 }
 
 .banner .banner--content .tagline {
@@ -284,7 +274,7 @@ img {
 }
 
 .about-container-left p {
-  /* font-size: 24px; */
+  font-size: 24px;
   margin: 6px 0 10px;
   color: #222;
 }
@@ -302,11 +292,8 @@ img {
 
 #about .about-container-left {
   -ms-flex-preferred-size: 10%;
-  /* flex-basis: 40%; */
-  /* width: 40%;  */
-
+  flex-basis: 40%;
   background: rgb(195, 195, 195);
-
   padding: 30px 15px;
 }
 
@@ -339,36 +326,14 @@ img {
     align-self: stretch;
   }
   .about-container-left p {
-    font-size: 10px;
-    /* margin: 65px 0 10px; */
+    font-size: 24px;
+    margin: 15px 0 10px;
     color: #222;
-  
   }
 }
 
- 
-
-/* #skill {
-   background-color: #7f53ac;
-  background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%); 
-} */
-
 #skill .skill--content {
   display: block;
-}
-
-@media screen and (min-width: 768px) {
-  /* #skill .skill--content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }  */
 }
 
 #skill .skill--content .left {
@@ -376,31 +341,27 @@ img {
   flex-basis: 30%;
 }
 
-#skill .skill--content .left  {
+#skill .skill--content .left {
   display: flex;
   justify-content: center;
   font-size: 70px;
   font-weight: 700;
-  color:rgb(132, 132, 132);
+  color: rgb(132, 132, 132);
 }
-
-
-
 
 #skill .skill--content .right {
   display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
-    background:rgb(195, 195, 195) ;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  background: rgb(195, 195, 195);
 }
 
-#skill  .right .item{
-display: block;
-
+#skill .right .item {
+  display: block;
 }
 @media screen and (min-width: 768px) {
   #skill .skill--content .right {
@@ -420,13 +381,10 @@ display: block;
   -ms-flex-preferred-size: 32%;
   flex-basis: 32%;
   text-align: center;
-  /* border: 1px solid #222; */
   padding: 30px 15px;
   margin-bottom: 30px;
   border-width: 5px 5px 5px 5px;
-/* 
-   border-image-slice: 19;  */
-  border: 0.001px solid white;  
+  
 }
 
 @media screen and (min-width: 768px) {
@@ -447,7 +405,6 @@ display: block;
 
 #portfolio {
   z-index: 1;
- 
 }
 
 #portfolio h2 {
@@ -471,7 +428,7 @@ display: block;
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
   position: relative;
-  background-color: rgb(195, 195, 195);;
+  background-color: rgb(195, 195, 195);
   -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
 }
@@ -497,9 +454,7 @@ display: block;
   min-width: 100%;
   min-height: 100%;
 }
-.item img {
-  background: url(https://www.pngwing.com/en/free-png-kxupc);
-}
+
 #portfolio .portfolio--content .item:hover > h3 {
   opacity: 1;
 }
