@@ -25,7 +25,10 @@ body {
 .banner  #toggle-mode{
 display: flex;
 }
-
+#toggle-mode{
+  color: #121212;
+  border-radius: 30px;
+}
 section {
   padding: 50px 18px;
 }
@@ -287,7 +290,7 @@ img {
 }
 
 .about-container-left p {
-  font-size: 24px;
+  
   margin: 6px 0 10px;
   color: #222;
 }
@@ -318,7 +321,7 @@ img {
 #about .about-container-right {
   -ms-flex-preferred-size: 60%;
   flex-basis: 60%;
-  background: rgb(195, 195, 195);
+  background: #c3c3c3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -330,7 +333,7 @@ img {
   max-width: 100%;
   -ms-flex-item-align: start;
   align-self: flex-start;
-  border-radius: 50%;
+   border: 1px solid rgb(195, 195, 195);
 }
 
 @media screen and (min-width: 1200px) {
@@ -339,7 +342,7 @@ img {
     align-self: stretch;
   }
   .about-container-left p {
-    font-size: 24px;
+     font-size: 18px; 
     margin: 15px 0 10px;
     color: #222;
   }
@@ -486,7 +489,11 @@ img {
 #contact address {
   margin-top: 60px;
 }
-
+.portfolio-view-code a{
+text-decoration: none;
+color: #000;
+text-transform: uppercase;
+}
 #contact address a {
   text-decoration: none;
 }
