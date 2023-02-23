@@ -7,6 +7,9 @@ html {
   box-sizing: border-box;
 }
 
+
+
+
 body {
   margin: 0;
   /* font-family: 'Oxygen', sans-serif; */
@@ -284,25 +287,33 @@ img {
   text-align: center;
   color: rgb(132, 132, 132);
 }
-
+@media screen and (max-width: 360px){
 #about .about-container {
-  display: block;
+  /* display: block; */
+  display: flex;
+  flex-direction: column-reverse;
 }
 
+
+}
 .about-container-left p {
   
   margin: 6px 0 10px;
   color: #222;
+  text-align: justify;
 }
 
 @media screen and (min-width: 768px) {
   #about .about-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
+     display: -webkit-box;
+    display: -ms-flexbox; 
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+
+
+  
   }
 }
 
@@ -345,6 +356,7 @@ img {
      font-size: 18px; 
     margin: 15px 0 10px;
     color: #222;
+    
   }
 }
 
@@ -484,6 +496,7 @@ img {
   max-width: 800px;
   display: block;
   margin: 0 auto;
+  text-align: justify;
 }
 
 #contact address {
@@ -535,6 +548,7 @@ text-transform: uppercase;
   line-height: 1.6;
   color: #e0e0e0;
   max-width: 500px;
+  text-align: justify;
 }
 
 .site-footer .site-footer--content a {
