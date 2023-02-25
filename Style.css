@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Tilt+Prism&display=swap');
+
 html {
   line-height: 1.15;
 }
@@ -16,6 +19,12 @@ body {
   position: relative;
 }
 
+
+
+
+
+
+
 .light-mode {
   background-color: #fff;
   color: #121212;
@@ -25,12 +34,14 @@ body {
   background-color: #121212;
   color: #fff;
 }
-.banner  #toggle-mode{
+  #toggle-mode{
 display: flex;
-}
-#toggle-mode{
-  color: #121212;
-  border-radius: 30px;
+/* width: 10%;*/
+padding-left: 20px; 
+} 
+#toggle-mode img{
+  max-width: 5%;
+  height: auto;
 }
 section {
   padding: 50px 18px;
@@ -65,9 +76,12 @@ h2 {
 }
 
 img {
-  max-width: 10%;
+  max-width: 50%;
   height: auto;
 }
+
+
+
 .hamburger img {
   max-width: none;
 }
@@ -157,11 +171,24 @@ img {
     flex-direction: row;
     color: #000000;
   }
+
+  #toggle-mode img{
+    max-width: 10%;
+    height: auto;
+  }
 }
 
 .site-header .nav-links ul li {
+ 
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+
 }
+
 
 .site-header .nav-links ul li a {
   font-size: 18px;
@@ -172,11 +199,16 @@ img {
   padding: 10px 15px;
   text-decoration: none;
   display: block;
+  
 }
 
 .site-header .nav-links ul li:hover {
   color: white;
   background-color: #87a3a3;
+}
+
+  #toggle-mode:hover{
+  background-color:white;
 }
 
 .site-header button {
@@ -208,10 +240,32 @@ img {
 
 .banner {
   padding: 90px 15px;
-  background-color: #87a3a3;
+  background-color:  #1c2b33;
   text-align: center;
-  color: #ffffff;
+  color: #ffffffb3;
+  
 }
+
+
+
+.light-mode .banner{
+  background-color:#1c2b33;
+  color: #121212;
+}
+
+.dark-mode .banner{
+  background-color:  #1c2b33;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
 
 .banner .banner--content {
   max-width: 1400px;
@@ -227,19 +281,36 @@ img {
   text-transform: uppercase;
 }
 
+
 .banner .banner--content .designation {
   color: rgba(255, 255, 255, 0.7);
   text-transform: uppercase;
-  font-family: "Oxygen", sans-serif;
+  font-family: "lastica";
   font-weight: 700;
   font-size: 36px;
   margin: 0;
 }
+h1.designation{
+  font-family: "lastica";
+}
+
+.name{
+  color: #4c5b63;
+}
+
 
 @media screen and (min-width: 768px) {
   .banner .banner--content .designation {
     font-size: 70px;
+    font-family: "lastica";
   }
+  .name{
+  font-size: 40px;
+font-family: "lastica";
+z-index: 18px;
+color: #4c5b63;
+}
+
 }
 
 .banner .banner--content .tagline {
@@ -253,8 +324,21 @@ img {
 }
 
 .promo {
-  background: #87a3a3;
+  background:  #1c2b33;
 }
+
+.light-mode .promo{
+  /* background-color: white; */
+  color: #121212;
+}
+
+.dark-mode .promo{
+  background-color: #121212;
+  color: #fff;
+}
+
+
+
 
 .promo .content h2 {
   font-size: 36px;
@@ -282,6 +366,11 @@ img {
     font-size: 36px;
   }
 }
+
+
+
+
+/* About section */
 
 #about .content h2 {
   text-align: center;
@@ -312,15 +401,13 @@ img {
     -ms-flex-pack: justify;
     justify-content: space-between;
 
-
-  
   }
 }
 
 #about .about-container-left {
   -ms-flex-preferred-size: 10%;
   flex-basis: 40%;
-  background: rgb(195, 195, 195);
+  /* background: rgb(195, 195, 195); */
   padding: 30px 15px;
 }
 
@@ -332,7 +419,7 @@ img {
 #about .about-container-right {
   -ms-flex-preferred-size: 60%;
   flex-basis: 60%;
-  background: #c3c3c3;
+  /* background: #c3c3c3; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -344,7 +431,7 @@ img {
   max-width: 100%;
   -ms-flex-item-align: start;
   align-self: flex-start;
-   border: 1px solid rgb(195, 195, 195);
+   /* border: 1px solid rgb(195, 195, 195); */
 }
 
 @media screen and (min-width: 1200px) {
@@ -352,6 +439,26 @@ img {
     -ms-flex-item-align: stretch;
     align-self: stretch;
   }
+  #about .about-container-right img {
+  padding-top: 50px;
+  padding-left: 50px;
+  max-width: 80%;
+  height: 600px;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  /* border: 1px solid rgb(195, 195, 195); */
+}
+
+#about .about-container-right img {
+  padding-top: 50px;
+  padding-left: 50px;
+  max-width: 100%;
+  height: 600px;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  border: 1px solid rgb(195, 195, 195);
+}
+
   .about-container-left p {
      font-size: 18px; 
     margin: 15px 0 10px;
@@ -359,6 +466,29 @@ img {
     
   }
 }
+ /*About dark-mode */
+
+ .light-mode #about .about-container-left{
+
+  color: white;
+}
+
+.dark-mode #about .about-container-left{
+  background-color: #121212;
+  color:white;
+}
+
+.dark-mode #about .about-container-left p{
+
+  background-color: #121212;
+  color:white;
+}
+
+
+
+
+
+/* Skill section */
 
 #skill .skill--content {
   display: block;
@@ -430,6 +560,21 @@ img {
   max-width: 100px;
   height: auto;
 }
+
+/* Skill dark mode */
+
+.light-mode  #skill .skill--content .right {
+
+  color: white;
+}
+
+.dark-mode #skill .skill--content .right {
+  background-color: #121212;
+  color:white;
+}
+
+
+/* portfolio section */
 
 #portfolio {
   z-index: 1;
@@ -511,8 +656,24 @@ text-transform: uppercase;
   text-decoration: none;
 }
 
+/* Portfolio dark mode */
+
+.light-mode #portfolio .portfolio--content .item {
+
+  color: white;
+}
+
+.dark-mode  #portfolio .portfolio--content .item{
+  background-color: #121212;
+  color:white;
+}
+
+
+
+
+
 .site-footer {
-  background-color: #87a3a3;
+  background-color:  #1c2b33;
   padding: 90px 15px 30px;
 }
 
