@@ -28,7 +28,3 @@ if (currentMode === "dark") {
 }
 
 toggleButton.addEventListener("click", toggleDarkMode);
-
-
-
-
