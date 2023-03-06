@@ -3,7 +3,12 @@ const mobileNavs = document.getElementsByClassName("nav-links")[0]
 
 
 
+const cvcontainer = document.getElementsByClassName("cvcontainer")[0]
 
+cvcontainer.addEventListener("click", () =>{
+  alert('Thank you for downloading!')
+}) 
+  
 hamburger.addEventListener("click", () => {
   mobileNavs.classList.toggle("active")
 })
@@ -28,3 +33,4 @@ if (currentMode === "dark") {
 }
 
 toggleButton.addEventListener("click", toggleDarkMode);
+

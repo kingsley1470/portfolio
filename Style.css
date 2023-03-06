@@ -36,6 +36,9 @@ padding-left: 20px;
   max-width: 5%;
   height: auto;
 }
+
+
+
 section {
   padding: 50px 18px;
 }
@@ -78,6 +81,8 @@ img {
 .hamburger img {
   max-width: none;
 }
+
+
 .center {
   text-align: center;
 }
