@@ -457,7 +457,7 @@ color: #4c5b63;
     opacity: 0.9;
   }
 }
- /*About dark-mode */
+ /*About mode */
 
  .light-mode #about .about-container-left{
 
@@ -552,7 +552,7 @@ color: #4c5b63;
   height: auto;
 }
 
-/* Skill dark mode */
+/* Skill  mode */
 
 .light-mode  #skill .skill--content .right {
 
@@ -578,7 +578,7 @@ color: #4c5b63;
   margin-bottom: 30px;
 }
 
-#portfolio .portfolio--content {
+/* #portfolio .portfolio--content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -587,13 +587,12 @@ color: #4c5b63;
   justify-content: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-}
+} */
 
 #portfolio .portfolio--content .item {
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
   position: relative;
-  /* background-color: rgb(195, 195, 195); */
   -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
 }
@@ -628,6 +627,36 @@ color: #4c5b63;
   opacity: 0.3;
 }
 
+
+#portfolio .portfolio--content {
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+
+@media screen and (min-width: 768px) {
+  #portfolio .portfolio--content .item1 {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: stretch;
+    
+}
+  
+}
+
+@media screen and (min-width: 768px) {
+  #portfolio .portfolio--content  {
+    width: 50%;
+  }
+
+  }
+
 #contact .contact-detail,
 #contact address {
   max-width: 800px;
@@ -648,12 +677,20 @@ text-transform: uppercase;
   text-decoration: none;
 }
 
-/* Portfolio dark mode */
+/* Portfolio  mode */
 
 .light-mode #portfolio .portfolio--content .item {
 
   color: white;
+display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
+
+
 
 .dark-mode  #portfolio .portfolio--content .item{
   background-color: #121212;
@@ -675,6 +712,10 @@ text-transform: uppercase;
   margin: 0 auto;
   color: #fff;
   border-bottom: 1px solid #0000004d;
+}
+
+.site-footer .site-footer--content {
+  opacity: 0.2;
 }
 
 @media screen and (min-width: 768px) {
