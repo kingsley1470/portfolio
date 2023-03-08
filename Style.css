@@ -231,8 +231,9 @@ img {
 }
 
 .nav-links.active {
-  display: block;
+  display: flex;
   background:white transparent;
+ 
   
 }
 
@@ -578,45 +579,47 @@ color: #4c5b63;
   margin-bottom: 30px;
 }
 
-/* #portfolio .portfolio--content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-} */
+.portfolio--content .about-app{
+  height: 130px;
+  background:#ffffff ;
+  color: #000;
+  opacity: 0.9;
+  
+}
+
+@media screen and (min-width: 768px) {
+.portfolio--content{
+display: grid;
+grid-template-columns: 2fr 2fr  ;
+gap: 20px;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.item img{
+  max-width: 100%;
+  height: 300px;
+ 
+}
+.portfolio--content .item{
+  max-width: 100%;
+}
+
+
+
 
 #portfolio .portfolio--content .item {
-  -ms-flex-preferred-size: 50%;
-  flex-basis: 50%;
+   -ms-flex-preferred-size: 50%;
+  flex-basis: 50%; 
   position: relative;
   -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
 }
 
-#portfolio .portfolio--content .item h3 {
-  color: black;
-  font-weight: 700;
-  text-transform: uppercase;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  -webkit-transition: all 0.8s ease-in-out;
+ #portfolio .portfolio--content .item h3 {
+  -webkit-transition: all 0.8s ease-in-out; 
   transition: all 0.8s ease-in-out;
-}
-
-#portfolio .portfolio--content .item img {
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%;
+} 
 }
 
 #portfolio .portfolio--content .item:hover > h3 {
@@ -627,34 +630,15 @@ color: #4c5b63;
   opacity: 0.3;
 }
 
-
-#portfolio .portfolio--content {
-
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
+.item img{
+  max-width: 100%;
+  max-height: auto;
+ 
 }
 
-
-@media screen and (min-width: 768px) {
-  #portfolio .portfolio--content .item1 {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-between;
-    align-items: stretch;
-    
-}
+.portfolio--content{
   
-}
-
-@media screen and (min-width: 768px) {
-  #portfolio .portfolio--content  {
-    width: 50%;
-  }
-
+    text-transform: uppercase;
   }
 
 #contact .contact-detail,
@@ -669,13 +653,13 @@ color: #4c5b63;
   margin-top: 60px;
 }
 .portfolio-view-code a{
-text-decoration: none;
+/* text-decoration: none; */
 color: #000;
 text-transform: uppercase;
 }
 #contact address a {
-  text-decoration: none;
-}
+  /* text-decoration: none; */
+} 
 
 /* Portfolio  mode */
 
